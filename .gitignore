@@ -1,0 +1,63 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+.env.*
+
+# SQL database files
+*.sqlite3
+*.db
+
+# Log files
+*.log
+*.out
+*.err
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Ignore virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+env.bak/
+venv.bak/
+
+# MacOS-specific files
+.DS_Store
+
+# Windows-specific files
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Ignore cache and temporary data
+.cache/
+*.bak
+*.log
+*.lock
+
+# Ignore compiled or bundled files
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Ignore coverage reports
+coverage/
+*.cover
+*.coverage
+*.lcov
+
+# Ignore Docker related files
+docker-compose.override.yml
