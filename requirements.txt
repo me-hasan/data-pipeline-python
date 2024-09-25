@@ -3,3 +3,4 @@ psycopg2==2.9.3
 python-dotenv
 SQLAlchemy
 pymysql
+loguru==0.5.3
