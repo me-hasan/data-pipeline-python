@@ -2,9 +2,11 @@ import pandas as pd
 from sqlalchemy import create_engine, MetaData, Table
 from sqlalchemy.orm import sessionmaker
 from dotenv import load_dotenv
-from urllib.parse import quote  # Importing quote
+from urllib.parse import quote  
 import os
-from datetime import datetime  # Import datetime module
+from datetime import datetime  
+import uuid
+
 
 # Log the start time
 start_time = datetime.now()
@@ -55,6 +57,7 @@ insert_records = []
 # Construct records for insertion
 for _, data in imds_data.iterrows():
     record = {
+        'uuid': str(uuid.uuid4()),
         'mkstat_instrument_code': data['MKISTAT_INSTRUMENT_CODE'],
         'mkstat_instrument_number': data['MKISTAT_INSTRUMENT_NUMBER'],
         'mkstat_quote_bases': data['MKISTAT_QUOTE_BASES'],
