@@ -11,7 +11,7 @@ from logging.handlers import RotatingFileHandler
 
 # --- Setup Logging ---
 # Configure logger
-log_file = 'db_sync.log'
+log_file = 'imds_mkistat.log'
 logging.basicConfig(level=logging.INFO)
 
 # Set up rotating file handler (so the log file doesn’t grow too large)
